@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/bubbles/100/earth-planet.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Global web newspaper</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand align-items-center" href="#">Global web newspaper</a>
+            <button class="hamburger-btn hamburger hamburger--spring d-lg-none" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+            </button>
+            
+            <ul class="menu d-lg-none">
+                <li class="item-list"><a href="#"><i class="bi bi-house-fill d-lg-none"></i> Home</a></li>
+                <li class="item-list"><a href="#"><i class="bi bi-newspaper d-lg-none"></i> News</a></li>
+                <li class="item-list"><a href="#"><i class="bi bi-controller d-lg-none"></i> Health</a></li>
+                <li class="item-list"><a href="#"><i class="bi bi-cpu d-lg-none"></i> Science</a></li>
+                <li class="item-list"><a href="#"><i class="bi bi-book d-lg-none"></i> Magazine</a></li>
+                <li class="item-list"><a href="#"><i class="bi bi-emoji-laughing-fill d-lg-none"></i> About</a></li>
+                <li class="item-list"><a href="https://github.com/light-y4gami" target="_blank" rel="noopener noreferrer"><i class="bi bi-github d-lg-none"></i> More</a></li>
+            </ul>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="home">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown-list">
+                        <a class="nav-link " href="#" id="news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="health">Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="science">Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="magazine">Magazine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://developer.nytimes.com/apis" target="_blank" rel="noopener noreferrer" id="api">API</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/light-y4gami" target="_blank" rel="noopener noreferrer" id="more">More</a>
+                    </li>
+                </ul>
+                <form class="d-none d-lg-flex formCustom">
+                    <input class="form-control me-sm-2" id="input" type="search" placeholder="Search" list="suggestions-list">
+                    <datalist id="suggestions-list" class="suggestions-list"></datalist>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spinner-background" id="spinnerBg">
+        <div class="spinner" id="spinner"></div>
+    </div>
+    
+    <div class="heroHome" id="hero">
+        <div class="container-fluid">
+            <h1 class="hero-h1">Your Newspaper even Closer</h1>
+            <p class="hero-p">
+                Find out about everything that happens in the world, stay informed with the current news.
+                <br>
+                <small>Written by: Light Yagami</small>
+            </p>
+        </div>
+    </div>
+
+    <h2 class="text-center most-popular" id="firstTitleArticles">Articles most popular</h2>
+    <div class="container d-flex justify-content-evenly mt-4 containerBtn" id="firstContainerBtn">
+        <button type="button" class="custom-button">Current</button>
+        <button type="button" class="custom-button">Sports</button>
+        <button type="button" class="custom-button">Politics</button>
+        <button type="button" class="custom-button">Health</button>
+        <button type="button" class="custom-button">Science</button>
+        <button type="button" class="custom-button">Economy</button>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-evenly custom-card" id="firstContainerCard">
+        <div class="card mt-5 card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Arts</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Joni Mitchell Returns to the Stage, Golden, Glorious and in Control</h6>
+              <p class="card-text">The singer-songwriter’s first announced concert in more than 20 years was a nearly-three-hour reimagining of her catalog that showcased her evolving, rich voice and her ever-sharp wit.</p>
+              <a href="https://www.nytimes.com/section/arts" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+        <div class="card mt-5 card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Movies</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">‘Transformers: Rise of the Beasts’ Review: Here Come the Grease Monkeys</h6>
+              <p class="card-text">Things start out fun with this prequel, but frantic plot mechanics might steer your interest into a ditch.</p>
+              <a href="https://www.nytimes.com/section/movies" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+        <div class="card mt-5 card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Magazine</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">The Spy Who Called Me</h6>
+              <p class="card-text">For years, Spanish society has been rocked by revelations from the secret tapes of José Manuel Villarejo Pérez, a former intelligence agent now facing prison. He told me his story.</p>
+              <a href="https://www.nytimes.com/section/magazine" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+        <div class="card mt-5 card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Cybersecurity</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Biden signs an executive order aimed at protecting critical American infrastructure from cyberattacks</h6>
+              <p class="card-text">The effort is a way to get beyond the patchwork of mandates and voluntary actions to protect electric utilities, gas pipelines, water supplies and industrial sites that keep the economy running.</p>
+              <a href="https://www.nytimes.com/spotlight/cybersecurity" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerFirstSvg">
+        <div id="firstSvg" class=""></div>
+    </div>
+
+    <div class="containerSecondSvg">
+        <div id="secondSvg" class=""></div>
+    </div>
+
+    <div class="container main mt-5" id="main"></div>
+    <button class="hide" id="hide"><i class="bi bi-chevron-up"></i></button>
+
+    <h2 class="text-center most-popular" id="secondTitleArticles">Topics of national interest</h2>
+    <div class="container d-flex justify-content-evenly mt-4" id="secondContainerBtn">
+        <button type="button" class="custom-button">Health</button>
+        <button type="button" class="custom-button">Economy</button>
+        <button type="button" class="custom-button">Science</button>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-evenly custom-card-two" id="secondContainerCard">
+        <div class="card mt-5 customCardTwo algo" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Health</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Noise Could Take Years Off Your Life. Here’s How</h6>
+              <p class="card-text">We used a professional sound meter to measure the din of daily life and talked to scientists about the health risks it can pose.</p>
+              <a href="https://www.nytimes.com/international/section/health" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+        <div class="card mt-5 customCardTwo" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Economy</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">The Hottest Thing in Real Estate Is a Loan From Two Years Ago</h6>
+              <p class="card-text">Real estate agents are pushing sub-3 percent mortgages as an amenity, just like marble countertops or a view of the mountains.</p>
+              <a href="https://www.nytimes.com/international/section/business/economy" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+        <div class="card mt-5 customCardTwo" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title customCardTitle">Science</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Cosmic Luck: NASA’s Apollo 11 Moon Quarantine Broke Down</h6>
+              <p class="card-text">A review of archives suggests that efforts to protect Earth from contamination by any organism brought back from the lunar surface were mostly for show.</p>
+              <a href="https://www.nytimes.com/international/section/science/space" class="card-link" target="_blank" rel="noopener noreferrer">Continue reading</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-footer">
+        <footer class="text-center text-lg-start text-white">
+
+            <div class="container p-4 pb-0">
+
+                <section class="">
+                    <div class="row">
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="mb-4 company-name">
+                                Global web newspaper
+                            </h6>
+                            <p>
+                                Global Web Newspaper is a project for educational purposes, 
+                                to have a broader knowledge about some technologies. 
+                                It is an online newspaper where you can search for current news on Sports, 
+                                Economy, Technology, Politics, Health, and more.
+                            </p>
+                        </div>
+
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white">HTML/CSS</a>
+                            </p>
+                            <p>
+                                <a class="text-white">TypeScript</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Bootstrap 5</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Bootswatch</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Google Fonts</a>
+                            </p>
+                        </div>
+
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a class="text-white" href="https://developer.nytimes.com/apis" target="_blank" rel="noopener noreferrer">APIs | Dev Portal</a>
+                            </p>
+                            <p>
+                                <a class="text-white" href="https://www.nytimes.com/" target="_blank" rel="noopener noreferrer">The New York Times</a>
+                            </p>
+                            <p>
+                                <a class="text-white">About</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Help</a>
+                            </p>
+                            <p>
+                                <a class="text-white">FAQ</a>
+                            </p>
+                        </div>
+
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Dominican republic, Santo Domingo, 10014</p>
+                            <p><i class="fas fa-envelope mr-3"></i> deppsystem@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> +1 809 567 88##</p>
+                            <p><i class="fas fa-print mr-3"></i> +1 849 567 89##</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <hr class="my-3">
+
+
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+
+                            <div class="p-3">
+                                © 2022/2023 Copyright:
+                                <a class="text-white" href="https://www.instagram.com/liightyagami_/" target="_blank" rel="noopener noreferrer">Light Yagami</a>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a href="https://www.instagram.com/liightyagami_/" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-instagram"></i></a>
+
+
+                            <a href="https://twitter.com/lighty4gami1" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-twitter"></i></a>
+
+
+                            <a href="https://www.tiktok.com/@systemf4iled?lang=es" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-tiktok"></i></a>
+
+
+                            <a href="https://t.me/desarrollofront3nd" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-telegram"></i></a>
+
+                            <a href="https://github.com/light-y4gami" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-github"></i></a>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="../public/js/index.js" type="module"></script>
+</body>
+
+</html>

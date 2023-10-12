@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Lobster&family=Poppins:wght@300&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  transition: all 0.7s ease-in;
+}
+
+.navbar-brand:hover {
+  transform: skew(20deg, 0deg);
+  transition-duration: 1s;
+}
+
+.custom-item {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+}
+
+.custom-item:hover {
+  color: #a3a1a1;
+  transition: all 0.3s ease-out;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  box-shadow: 0 2px 10px rgba(244, 238, 238, 0.964);
+}
+
+.heroHome {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../assets/hero-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: buttom center;
+  height: 120vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: -2;
+  font-family: 'Fira Sans', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.heroNews {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../assets/hero-news.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 120vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: -2;
+  font-family: 'Fira Sans', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.heroHealth {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../assets/hero-health.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: buttom center;
+  height: 120vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: -2;
+  font-family: 'Fira Sans', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.heroScience {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../assets/hero-science.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: buttom center;
+  height: 120vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: -2;
+  font-family: 'Fira Sans', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.heroMagazine {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../assets/hero-magazine.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: buttom center;
+  height: 120vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: -2;
+  font-family: 'Fira Sans', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.heroAbout {
+  background-image:  url("../assets/hero-about.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: buttom center;
+  height: 120vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: -2;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.hero-h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 900;
+}
+
+.navbar-nav {
+  gap: 3rem;
+}
+
+.navbar-collapse {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.text-white {
+  text-decoration: none;
+}
+
+.company-name {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+}
+
+.fa-cloud-sun {
+  font-size: 28px;
+}
+
+.nav-link .icon-image {
+  max-height: 30px;
+}
+
+.icon-image {
+  width: 100%;
+  height: auto;
+}
+
+.hamburger-btn .hamburger-inner,
+.hamburger-btn .hamburger-inner::before,
+.hamburger-btn .hamburger-inner::after {
+  background-color: #fff !important;
+}
+
+.menu {
+  display: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  position: absolute;
+  right: 3px;
+  top: 80px;
+  background-color: #212529;
+  padding: 10px;
+  border-radius: 14px;
+  border: 4px solid rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7);
+  width: 280px;
+  height: 615px;
+  opacity: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.item-list {
+  margin-bottom: 4rem;
+}
+
+.item-list:not(:first-child) {
+  margin-top: 20px;
+}
+
+.menu.open {
+  display: block;
+  color: #fff;
+  list-style: none;
+  font-family: 'Fira Sans', sans-serif;
+  opacity: 1;
+}
+
+.item-list > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.item-list > a:hover {
+  color: #ccc;
+  transition: all 0.3s ease-out;
+}
+
+.most-popular {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.title {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.custom-button {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 9rem;
+  height: 3rem;
+  background-color: #212529;
+  color: #fff;
+  border-radius: 25px;
+  cursor: auto !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-button {
+  transition: all 0.5s ease-out;
+}
+
+.custom-button:hover {
+  transform: scale(1.1);
+}
+
+.hideElements {
+  display: none !important;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card {
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  background-image: url('../assets/magazine-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-card-two {
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  background-image: url('../assets/interest-national-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-card {
+  overflow: hidden;
+}
+
+.card-custom {
+  transition: all 0.5s ease-out;
+}
+
+.customCardTwo {
+  transition: all 0.5s ease-out;
+}
+
+.card-custom:hover {
+  transform: scale(1.2);
+}
+
+.customCardTwo:hover {
+  transform: scale(1.2);
+}
+
+.customCardTitle {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+
+.card-title-two {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.card-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+
+.card-link {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  color: #212529;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  color: #ccc;
+  transition: all 0.3s ease-out;
+}
+
+.main > p {
+  font-family: 'Fira Sans', sans-serif;
+  z-index: 900;
+}
+
+.spinner-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(82, 0, 255, 0) 0deg,
+    #212529 360deg
+  );
+  animation: spin 1s infinite linear;
+}
+
+.spinner::before {
+  content: "";
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.custom-container {
+  max-width: 1000px;
+}
+
+.containerFirstSvg {
+  float: right;
+  z-index: 1;
+}
+
+.containerSecondSvg {
+  float: left;
+  z-index: 1;
+}
+
+.firstSvg {
+  position: absolute;
+  background: url('../assets/happy_news.svg') no-repeat right top;
+  background-size: contain;
+  width: 250px;
+  height: 70%;
+  right: 0;
+  z-index: 0;
+}
+
+.secondSvg {
+  position: absolute;
+  background: url('../assets/world.svg') no-repeat left bottom;
+  background-size: contain;
+  width: 290px;
+  height: 100%;
+  left: 0;
+  z-index: 0;
+}
+
+.yogaSvg {
+  position: absolute;
+  background: url('../assets/yoga.svg') no-repeat right top;
+  background-size: contain;
+  width: 250px;
+  height: 70%;
+  right: 0;
+  z-index: 0;
+}
+
+.coffeFriendsSvg {
+  position: absolute;
+  background: url('../assets/coffee_friends.svg') no-repeat left bottom;
+  background-size: contain;
+  width: 290px;
+  height: 100%;
+  left: 0;
+  z-index: 0;
+}
+
+.launchingSvg {
+  position: absolute;
+  background: url('../assets/launching.svg') no-repeat right top;
+  background-size: contain;
+  width: 250px;
+  height: 70%;
+  right: 0;
+  z-index: 0;
+}
+
+.lightbulbMomentSvg {
+  position: absolute;
+  background: url('../assets/lightbulb_moment.svg') no-repeat left bottom;
+  background-size: contain;
+  width: 190px;
+  height: 100%;
+  left: 3px;
+  z-index: 0;
+}
+
+.magazineSvg {
+  margin-top: 0.5rem;
+  position: absolute;
+  background: url('../assets/work_chat.svg') no-repeat right top;
+  background-size: contain;
+  width: 270px;
+  height: 70%;
+  right: 0;
+  z-index: 0;
+}
+
+.officeSvg {
+  position: absolute;
+  background: url('../assets/office.svg') no-repeat left bottom;
+  background-size: contain;
+  width: 195px;
+  height: 100%;
+  left: 3px;
+  z-index: 0;
+}
+
+.linkNewsCard {
+  text-decoration: none;
+  color: #212529;
+}
+
+.customCardTitleNews {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+
+.linkNewsCard:hover {
+  color: #ccc;
+  transition: all 0.3s ease-out;
+}
+
+.custom-btn {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 7rem;
+  height: 3rem;
+  background-color: #fff;
+  color: #212529;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bt-custom {
+  font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 18px;
+  font-weight: 200;
+}
+
+.bt-custom:hover {
+  background-color: transparent;
+  color: inherit;
+  border-color: inherit;
+  transition: all 0.7s ease-out;
+}
+
+.offcanvas-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 800;
+}
+
+.paragraphCanvas > a {
+  font-family: 'Fira Sans', sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.paragraphCanvas > a:hover {
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.container-footer {
+  font-family: 'Fira Sans', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/background-footer.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background: #212529;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c2b9b9;
+  border-radius: 3px;
+}
+
+#hide {
+  position: fixed;
+  z-index: 1000;
+  bottom: 1vh;
+  right: calc(2.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-style: none;
+  border-radius: 50%;
+  font-size: 45px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #212529;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#hide:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(1turn);
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 868px) {
+  .heroNews {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero-news-small.jpeg");
+  }
+
+  .heroHealth {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/hero-health-small.jpg");
+  }
+
+  .heroAbout {
+    background-image: url("../assets/hero-about-small.jpeg");
+    background-size: contain;
+    background-position: center center;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-h1 {
+    font-size: 24px;
+  }
+  .hero-p {
+    font-size: 14px;
+  }
+  .custom-button {
+    font-size: 12px;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .custom-button:nth-child(n+6) {
+    display: none;
+  }
+
+  .custom-button:nth-child(n+5) {
+    display: none;
+  }
+
+  .custom-button:nth-child(n+4) {
+    display: none;
+  }
+
+  .card-custom:nth-child(n+2) {
+    display: none;
+  }
+
+  .most-popular {
+    font-size: 20px;
+  }
+
+  .card-custom {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .card-custom .customCardTitle {
+    font-size: 18px;
+  }
+
+  .card-custom .card-text {
+    font-size: 12px;
+  }
+
+  .card-custom .card-subtitle {
+    font-size: 10px;
+  }
+
+  .card-custom .card-link {
+    font-size: 8px;
+  }
+
+  .customCardTwo:nth-child(n+2) {
+    display: none;
+  }
+
+  .customCardTwo {
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+  }
+
+  .customCardTwo .customCardTitle {
+    font-size: 18px;
+  }
+
+  .customCardTwo .card-text {
+    font-size: 14px;
+  }
+
+  .customCardTwo .card-subtitle {
+    font-size: 12px;
+  }
+
+  .customCardTwo .card-link {
+    font-size: 10px;
+  }
+
+  .card-custom:hover {
+    transform: scale(1.05);
+  }
+  
+  .customCardTwo:hover {
+    transform: scale(1.05);
+  }
+
+  .firstSvg {
+    width: 40px;
+    height: 8%;
+  }
+
+  .secondSvg {
+    display: none;
+  }
+
+  .yogaSvg {
+    width: 40px;
+    height: 8%;
+  }
+
+  .coffeFriendsSvg {
+    display: none;
+  }
+
+  .launchingSvg {
+    width: 40px;
+    height: 8%;
+  }
+
+  .lightbulbMomentSvg {
+    display: none;
+  }
+
+  .magazineSvg {
+    width: 40px;
+    height: 8%;
+  }
+
+  .officeSvg {
+    display: none;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 650px) {
+  .heroHome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../assets/hero-home-small.jpg");
+  }
+
+  .heroHealth {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/hero-health-small.jpg");
+  }
+
+  .heroScience {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../assets/hero-science-small.jpg");
+  }
+
+  .heroMagazine {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../assets/hero-magazine-small.jpg");
+  }
+
+  .container-footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/background-footer-small.jpg');
+  }
+
+  .custom-button:nth-child(n+6) {
+    display: none;
+  }
+  
+  .custom-button:nth-child(n+5) {
+    display: none;
+  }
+
+  .custom-button:nth-child(n+4) {
+    display: none;
+  }
+
+  .custom-button:nth-child(n+3) {
+    display: none;
+  }
+
+  .card-custom:nth-child(n+3) {
+    display: none;
+  }
+
+  .most-popular {
+    font-size: 22px;
+  }
+  
+  .card-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+  }
+
+  .card-custom .customCardTitle {
+    font-size: 18px;
+  }
+
+  .card-custom .card-text {
+    font-size: 14px;
+  }
+
+  .card-custom .card-subtitle {
+    font-size: 12px;
+  }
+
+  .card-custom .card-link {
+    font-size: 10px;
+  }
+
+  .customCardTwo:nth-child(n+3) {
+    display: none;
+  }
+
+  .customCardTwo {
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+  }
+
+  .custom-card-two .customCardTitle {
+    font-size: 18px;
+  }
+
+  .custom-card-two .card-text {
+    font-size: 14px;
+  }
+
+  .custom-card-two .card-subtitle {
+    font-size: 12px;
+  }
+
+  .custom-card-two .card-link {
+    font-size: 10px;
+  }
+
+  .card-custom:hover {
+    transform: scale(1.05);
+  }
+  
+  .customCardTwo:hover {
+    transform: scale(1.05);
+  }
+
+  .firstSvg {
+    width: 80px;
+    height: 40%;
+  }
+
+  .secondSvg {
+    display: none;
+  }
+
+  .yogaSvg {
+    width: 50px;
+    height: 10%;
+  }
+
+  .coffeFriendsSvg {
+    display: none;
+  }
+
+  .launchingSvg {
+    width: 90px;
+    height: 70%;
+  }
+
+  .lightbulbMomentSvg {
+    display: none;
+  }
+
+  .magazineSvg {
+    width: 90px;
+    height: 70%;
+  }
+
+  .officeSvg {
+    display: none;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1300px) {
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .formCustom {
+    width: 60%;
+  }
+
+  .nav-item:nth-child(n+8) {
+    margin-right: 12px;
+  }
+
+  .custom-button:nth-child(n+6) {
+    display: none;
+  }
+
+  .custom-button:nth-child(n+5) {
+    display: none;
+  }
+  
+  .card-custom:nth-child(n+4) {
+    display: none;
+  }
+
+  .most-popular {
+    font-size: 24px;
+  }
+
+  .card-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+  }
+
+  .customCardTwo {
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,4 @@
+base = "App-Global-web-newspaper-v1"
+publish = "public/js"
+command = "node_modules/.bin/tsc"
+
