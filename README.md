@@ -39,7 +39,7 @@ To run this project locally, follow these steps:
 1. Clone the repo to your local machine using Git:
     
      ```bash
-     git clone https://github.com/TuUsuario/Global-Web-Newspaper.git
+     git clone https://github.com/light-y4gami/App-Global-web-newspaper-v1.git
      ```
 
      Ensure you have Node.js installed on your system:
