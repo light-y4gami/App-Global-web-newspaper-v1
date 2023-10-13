@@ -42,7 +42,7 @@ To run this project locally, follow these steps:
      git clone https://github.com/TuUsuario/Global-Web-Newspaper.git
      ```
 
-     Ensure you have Node.js installed on your system.
+     Ensure you have Node.js installed on your system:
 
      ```bash
      node -v
@@ -68,7 +68,7 @@ To run this project locally, follow these steps:
 4. navigate to the project directory:
 
      ```bash
-     cd Global-Web-Newspaper
+     cd App-Global-web-newspaper-v1
      ```
 
 5. Install the dependencies of the project using npm:

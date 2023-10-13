@@ -203,8 +203,12 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
+.menu {
+  height: 30rem;
+}
+
 .item-list {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .item-list:not(:first-child) {
